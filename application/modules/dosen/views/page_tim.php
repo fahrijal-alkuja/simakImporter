@@ -224,7 +224,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div style="overflow:auto;">
                         <div>
                             <button type="submit" onclick="move()" id="nextBtn">Tranfer Data</button>
-
                         </div>
                     </div>
                 </div>

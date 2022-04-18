@@ -88,7 +88,7 @@ class Dosen extends CI_Controller
                 'rencana_tatap_muka' => '16',
                 'tatap_muka_real' => '12',
                 'kode_jurusan' => $data->kode_program_studi,
-                'sks_ajar' => $data->sks_mata_kuliah,
+                'sks_ajar' => $data->sks_mata_kuliah/2,
             );
             $this->db->insert('ajar_dosen', $hasil);
             $no_upd++;
@@ -123,7 +123,7 @@ class Dosen extends CI_Controller
                 'rencana_tatap_muka' => 16,
                 'tatap_muka_real' => 12,
                 'kode_jurusan' => $data->kode_program_studi,
-                'sks_ajar' => $data->sks_mata_kuliah,
+                'sks_ajar' => $data->sks_mata_kuliah/2,
             );
             $this->db->insert('ajar_dosen', $hasil);
             $no_upd++;
