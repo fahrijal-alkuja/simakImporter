@@ -40,7 +40,7 @@ class Dosen extends CI_Controller
         $tahun = $this->input->post('tahun');
         $semester = $this->input->post('semester');
         $prodi = $this->input->post('prodi');
-        $this->API = "http://api.unikarta.ac.id/api/ajar/dosen?API-KEY=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFsa3VqYSIsImlhdCI6MTU0MTk5MzkzNiwiZXhwIjoxNTQxOTk3NTM2fQ.eeVoobmrGio3Eu3vksKVgp_KGaHbVW2S7zhMsHeagVw&tahun=$tahun&semester=$semester&kode_program_studi=$prodi";
+        $this->API = "http://api.unikarta.ac.id/api/ajar/dosen?API-KEY=keydisini&tahun=$tahun&semester=$semester&kode_program_studi=$prodi";
         $hsl = json_decode($this->curl->simple_get($this->API));
         $no_ins = $no_upd = 0;
         foreach ($hsl as $data) {
@@ -101,7 +101,7 @@ class Dosen extends CI_Controller
         $tahun = $this->input->post('tahun');
         $semester = $this->input->post('semester');
         $prodi = $this->input->post('prodi');
-        $this->API = "http://api.unikarta.ac.id/api/ajar/anggota?API-KEY=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFsa3VqYSIsImlhdCI6MTU0MTk5MzkzNiwiZXhwIjoxNTQxOTk3NTM2fQ.eeVoobmrGio3Eu3vksKVgp_KGaHbVW2S7zhMsHeagVw&tahun=$tahun&semester=$semester&kode_program_studi=$prodi";
+        $this->API = "http://api.unikarta.ac.id/api/ajar/anggota?API-KEY=..keydisini&tahun=$tahun&semester=$semester&kode_program_studi=$prodi";
         $data['dosen'] = json_decode($this->curl->simple_get($this->API));
         $this->load->view('page_anggota', $data);
     }
@@ -110,7 +110,7 @@ class Dosen extends CI_Controller
         $tahun = $this->input->post('tahun');
         $semester = $this->input->post('semester');
         $prodi = $this->input->post('prodi');
-        $this->API = "http://api.unikarta.ac.id/api/ajar/anggota?API-KEY=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFsa3VqYSIsImlhdCI6MTU0MTk5MzkzNiwiZXhwIjoxNTQxOTk3NTM2fQ.eeVoobmrGio3Eu3vksKVgp_KGaHbVW2S7zhMsHeagVw&tahun=$tahun&semester=$semester&kode_program_studi=$prodi";
+        $this->API = "http://api.unikarta.ac.id/api/ajar/anggota?API-KEY=..keydisini&tahun=$tahun&semester=$semester&kode_program_studi=$prodi";
         $hsl = json_decode($this->curl->simple_get($this->API));
         $no_ins = $no_upd = 0;
         foreach ($hsl as $data) {
